@@ -1,2 +1,30 @@
-<h1>クリックゲーム画面</h1>
+<div class="relative min-h-screen p-4">
 
+  <img src="<%= asset_path('games.gif') %>" class="absolute inset-0 w-full h-full object-cover z-0" alt="ゲーム背景">
+
+  <!-- ゲームエリア -->
+  <div id="game-area" class="hidden absolute inset-0">
+    <!-- スコア表示：上部中央 -->
+    <div class="absolute top-4 left-1/2 transform -translate-x-1/2 z-10 text-center bg-white/80 px-10 py-6 rounded-2xl shadow-lg space-y-4">
+      <p class="text-4xl font-semibold">
+        残り <span id="time" class="text-orange-600">10</span> 秒
+      </p>
+      <p class="text-gray-700 font-bold text-xl">
+        クリック数: <span id="count">0</span>
+      </p>
+    </div>
+
+    <!-- クリックボタン：右下 -->
+  <button id="click-btn" class="absolute bottom-20 right-24 z-10 px-16 py-16 bg-yellow-300 hover:bg-yellow-400 text-white rounded-full text-5xl font-bold shadow-xl transform hover:scale-105 transition-all duration-200">  
+    クリック！
+    </button>
+  </div>
+
+  <!-- スタートボタン：画面中央 -->
+  <button id="start-btn" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 px-12 py-8 bg-yellow-400 hover:bg-yellow-500 text-white rounded-xl font-bold text-4xl shadow">
+    スタート！
+  </button>
+
+  <!-- 結果ボタン-->
+  <%= link_to "結果を見る", result_path, id: "result-btn",
+    class: "hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-12 py-8 bg-green-600 hover:bg-green-500 text-white rounded-xl font-bold text-4xl z-10 shadow-lg hover:shadow-xl transition-all duration-200" %></div>
