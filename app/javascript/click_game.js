@@ -31,7 +31,7 @@ document.addEventListener("turbo:load", () => {
         clearInterval(timerId);
         clickBtn.disabled = true;
         // 結果ページへクリック数を渡す
-        resultBtn.href = `/usage?clicks=${count}`;
+        resultBtn.href = `/result?clicks=${count}`;
         resultBtn.classList.remove("hidden");
       }
     }, 1000);
