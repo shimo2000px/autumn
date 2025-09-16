@@ -1,5 +1,5 @@
 # ひつじさんの秋コーデ工房
-![ひつじさんの秋コーデ工房](app/assets/images/autumn-1.png)
+![ひつじさんの秋コーデ工房](app/assets/images/autumn-OGP.png)
 
 ## 概要
 【秋】をテーマにした、クリックで洋服を仕立てるミニゲームアプリ。
@@ -27,4 +27,5 @@
 - ESBuild（JavaScriptバンドル学習）
 - Propshaft / Asset Pipeline
 - JavaScript
+
 Railsの基本的な構造と、フロントエンドの動的な動きについて理解を深めようと思い、作成しました。
