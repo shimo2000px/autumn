@@ -2,12 +2,12 @@
   <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-7xl flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
     
     <!-- 左：画像 -->
-    <img src="<%= asset_path('tank-top.png') %>" class="w-full md:w-1/2 rounded-xl shadow-lg" alt="結果画像">
+    <img src="<%= asset_path('long.png') %>" class="w-full md:w-1/2 rounded-xl shadow-lg" alt="結果画像">
 
     <!-- 右：テキスト -->
     <div class="flex-1 space-y-4 text-center md:text-left">
-      <h1 class="text-5xl font-bold text-amber-800">タンクトップ</h1>
-      <p class="text-2xl">風邪ひいちゃうよ、、</p>
+      <h1 class="text-5xl font-bold text-amber-800">長袖</h1>
+      <p class="text-2xl">やっっっと長袖着れるね！！</p>
 
       <div class="mb-4">
         <p class="text-2xl text-gray-600 mb-2">あなたのクリック数</p>
@@ -17,7 +17,7 @@
       <div class="space-y-2">
         <%= link_to "もう一度プレイ", games_path, class: "block w-full px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-white rounded-xl font-bold text-xl" %>
         <%= link_to "トップページ", root_path, class: "block w-full px-8 py-4 bg-gray-500 hover:bg-gray-600 text-white rounded-xl font-bold text-xl" %>
-        <%= link_to "X でシェア", "https://twitter.com/intent/tweet?text=#{ERB::Util.url_encode("私は#{@clicks}回クリックしてタンクトップを作りました！")}&url=#{ERB::Util.url_encode(result_url(clicks: @clicks))}", target: "_blank", rel: "noopener", class: "block w-full px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white rounded-xl font-bold text-xl" %>
+        <%= link_to "X でシェア", "https://twitter.com/intent/tweet?text=#{ERB::Util.url_encode("私は#{@clicks}回クリックして長袖を作りました！")}&url=#{ERB::Util.url_encode(result_url(clicks: @clicks))}", target: "_blank", rel: "noopener", class: "block w-full px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white rounded-xl font-bold text-xl" %>
       </div>
     </div>
   </div>
