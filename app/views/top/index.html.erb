@@ -1,11 +1,28 @@
-<div class="autumn-top min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-600 to-indigo-700 text-white">
-  <h1 class="text-5xl font-bold mb-12">羊さんの洋服作り</h1>
+<div class="autumn-top relative min-h-screen flex flex-col items-center justify-center">
 
-  <div class="space-x-6">
-    <%= link_to "使い方", "#",
-      class: "px-6 py-3 bg-red-400 hover:bg-red-500 rounded-xl text-lg font-semibold transition" %>
+  <!-- 背景 -->
+  <img src="<%= asset_path('top.png') %>"
+      alt="ゲーム背景"
+      class="absolute inset-0 w-full h-full object-cover z-0">
 
-    <%= link_to "ゲームを始める", "#",
-      class: "px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-gray-900 rounded-xl text-lg font-bold transition" %>
+  <!-- タイトル -->
+  <h1 class="
+      absolute z-10 font-bold text-amber-600
+      text-4xl sm:text-5xl md:text-7xl lg:text-8xl
+      top-48 sm:top-64 md:top-80
+    ">
+    羊さんの洋服作り
+  </h1>
+
+  <!-- ボタン -->
+  <div class="
+      absolute z-10 flex space-x-4 sm:space-x-6
+      bottom-20 sm:bottom-28 md:bottom-32
+    ">
+    <%= link_to "遊び方", usage_path,
+      class: "px-6 py-3 sm:px-8 sm:py-4 md:px-12 md:py-6 bg-red-400 hover:bg-red-500 rounded-xl text-lg sm:text-xl md:text-2xl text-white font-semibold transition" %>
+
+    <%= link_to "ゲームを始める", games_path,
+      class: "px-6 py-3 sm:px-8 sm:py-4 md:px-12 md:py-6 bg-yellow-400 hover:bg-yellow-500 text-white rounded-xl text-lg sm:text-xl md:text-2xl font-bold transition" %>
   </div>
 </div>
