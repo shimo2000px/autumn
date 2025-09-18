@@ -29,7 +29,13 @@
       <div class="space-y-2">
         <%= link_to "もう一度プレイ", games_path, class: "block w-full px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-white rounded-xl font-bold text-xl" %>
         <%= link_to "トップページ", root_path, class: "block w-full px-8 py-4 bg-gray-500 hover:bg-gray-600 text-white rounded-xl font-bold text-xl" %>
-        <%= link_to "X でシェア", "https://twitter.com/intent/tweet?text=#{ERB::Util.url_encode("私は#{@clicks}回クリックしてタンクトップを作りました！")}&url=#{ERB::Util.url_encode(result_url(clicks: @clicks))}", target: "_blank", rel: "noopener", class: "block w-full px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white rounded-xl font-bold text-xl" %>
+        <%= link_to "X でシェア",
+          "https://twitter.com/intent/tweet?text=#{ERB::Util.url_encode("#{@clicks}回クリックしてタンクトップを作りました！")}" \
+          "&url=#{ERB::Util.url_encode(result_url(clicks: @clicks))}" \
+          "&hashtags=#{ERB::Util.url_encode('ひつじさんの秋コーデ工房')}",
+          target: "_blank",
+          rel: "noopener",
+          class: "block w-full px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white rounded-xl font-bold text-xl" %>
       </div>
     </div>
   </div>
